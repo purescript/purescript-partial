@@ -1,6 +1,6 @@
 ## Module Partial.Unsafe
 
-Utilities for workign with partial functions
+Utilities for working with partial functions.
 
 #### `unsafePartial`
 

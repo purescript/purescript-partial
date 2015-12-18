@@ -1,4 +1,4 @@
--- | Utilities for workign with partial functions
+-- | Utilities for working with partial functions.
 module Partial.Unsafe 
   ( unsafePartial
   ) where
