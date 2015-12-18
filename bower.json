@@ -9,6 +9,8 @@
     "bower_components",
     "output"
   ],
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript/purescript-partial.git"
   }
 }
