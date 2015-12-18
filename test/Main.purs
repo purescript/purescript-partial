@@ -1,12 +1,11 @@
 module Test.Main where
 
-data X = X | Y
+f :: Partial => Int -> Int
+f 0 = 0
+f _ = Partial.crashWith "f: partial function"
 
-f :: Partial => X -> X
-f X = X
-
-safely :: X
-safely = Partial.Unsafe.unsafePartial (f X)
+safely :: Int
+safely = Partial.Unsafe.unsafePartial (f 0)
 
 main :: forall a. a -> {}
 main _ = {}
