@@ -2,8 +2,8 @@
 
 // module Partial
 
-exports.crashWith = function() {
-    return function(msg) {
-        throw new Error(msg);
-    };
+exports.crashWith = function () {
+  return function (msg) {
+    throw new Error(msg);
+  };
 };

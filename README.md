@@ -11,6 +11,6 @@ Utilities for working with partial functions.
 bower install purescript-partial
 ```
 
-## Module documentation
+## Documentation
 
-- [Partial.Unsafe](docs/Partial/Unsafe.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-partial).
