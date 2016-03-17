@@ -1,16 +1,19 @@
 {
   "name": "purescript-partial",
-  "moduleType": [
-    "node"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "output"
-  ],
+  "homepage": "https://github.com/purescript/purescript-partial",
+  "description": "Mutable value references",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-partial.git"
-  }
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ]
 }
