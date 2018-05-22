@@ -2,7 +2,7 @@
   "name": "purescript-partial",
   "homepage": "https://github.com/purescript/purescript-partial",
   "description": "Utilities for working with partial functions",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-partial.git"
