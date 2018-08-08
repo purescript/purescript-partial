@@ -1,5 +1,5 @@
--- | Some partial helper functions.
-module Partial 
+-- | Some partial helper functions. See the README for more documentation.
+module Partial
   ( crash
   , crashWith
   ) where
