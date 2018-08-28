@@ -1,4 +1,5 @@
 -- | Utilities for working with partial functions.
+-- | See the README for more documentation.
 module Partial.Unsafe
   ( unsafePartial
   , unsafePartialBecause
