@@ -3,7 +3,7 @@
   "scripts": {
     "clean": "rimraf output && rimraf .pulp-cache",
     "build": "jshint src && jscs src && pulp build -- --censor-lib --strict",
-    "test": "pulp test --no-check-main"
+    "test": "pulp test"
   },
   "devDependencies": {
     "jscs": "^3.0.7",
