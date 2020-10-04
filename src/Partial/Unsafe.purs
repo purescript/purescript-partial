@@ -2,7 +2,6 @@
 -- | See the README for more documentation.
 module Partial.Unsafe
   ( unsafePartial
-  , unsafePartialBecause
   , unsafeCrashWith
   ) where
 
@@ -19,10 +18,6 @@ foreign import _unsafePartial :: forall a b. a -> b
 -- | Discharge a partiality constraint, unsafely.
 unsafePartial :: forall a. (Partial => a) -> a
 unsafePartial = _unsafePartial
-
--- | *deprecated:* use `unsafePartial` instead.
-unsafePartialBecause :: forall a. String -> (Partial => a) -> a
-unsafePartialBecause _ x = unsafePartial x
 
 -- | A function which crashes with the specified error message.
 unsafeCrashWith :: forall a. String -> a
