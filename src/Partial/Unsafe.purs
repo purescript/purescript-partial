@@ -8,9 +8,9 @@ module Partial.Unsafe
 
 import Partial (crashWith)
 
--- | Discharge a partiality constraint, unsafely.
 foreign import _unsafePartial :: forall a b. a -> b
 
+-- | Discharge a partiality constraint, unsafely.
 unsafePartial :: forall a. (Partial => a) -> a
 unsafePartial = _unsafePartial
 
