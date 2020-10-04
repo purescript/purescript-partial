@@ -9,7 +9,10 @@ module Partial.Unsafe
 import Partial (crashWith)
 
 -- | Discharge a partiality constraint, unsafely.
-foreign import unsafePartial :: forall a. (Partial => a) -> a
+foreign import _unsafePartial :: forall a b. a -> b
+
+unsafePartial :: forall a. (Partial => a) -> a
+unsafePartial = _unsafePartial
 
 -- | *deprecated:* use `unsafePartial` instead.
 unsafePartialBecause :: forall a. String -> (Partial => a) -> a
