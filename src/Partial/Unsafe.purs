@@ -8,6 +8,12 @@ module Partial.Unsafe
 
 import Partial (crashWith)
 
+-- Note: this function's type signature is more like
+-- `(Unit -> a) -> a`. However, we would need to use
+-- `unsafeCoerce` to make this compile, incurring
+-- either a dependency or reimplementing it here.
+-- Rather than doing that, we'll use a type signature
+-- of `a -> b` instead.
 foreign import _unsafePartial :: forall a b. a -> b
 
 -- | Discharge a partiality constraint, unsafely.
