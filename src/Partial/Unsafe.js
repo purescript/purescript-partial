@@ -2,6 +2,6 @@
 
 // module Partial.Unsafe
 
-exports.unsafePartial = function (f) {
+exports._unsafePartial = function (f) {
   return f();
 };
