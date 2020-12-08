@@ -2,6 +2,7 @@
 
 [![Latest release](http://img.shields.io/bower/v/purescript-partial.svg)](https://github.com/purescript/purescript-partial/releases)
 [![Build status](https://github.com/purescript/purescript-partial/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-partial/actions?query=workflow%3ACI+branch%3Amaster)
+[![Pursuit](https://pursuit.purescript.org/packages/purescript-partial/badge)](https://pursuit.purescript.org/packages/purescript-partial)
 
 Utilities for working with partial functions.
 
@@ -13,7 +14,7 @@ spago install partial
 
 ## Why have a Partial type class?
 
-Every now and then, you will want to use *partial functions;* that is,
+Every now and then, you will want to use _partial functions;_ that is,
 functions which don't handle every possible case of their inputs. For example,
 there is a function `fromJust :: ∀ a. Partial ⇒ Maybe a → a` in `Data.Maybe`,
 which gives you the value inside a `Just` value, or throws an error if given
@@ -21,7 +22,7 @@ which gives you the value inside a `Just` value, or throws an error if given
 
 It's important that types tell the truth wherever possible, because this is a
 large part of what allows us to understand PureScript code easily and refactor
-it fearlessly.  However, in certain contexts, you know that e.g. an `Either`
+it fearlessly. However, in certain contexts, you know that e.g. an `Either`
 value is always going to be `Right`, but you can't prove that to the type
 checker, and so you want an escape hatch so that you can write a function that
 doesn't have to deal with the `Left` case. This is often the case when
@@ -69,7 +70,7 @@ at src/Main.purs line 8, column 1 - line 8, column 56
     Prim.Partial
 ```
 
-*Aside: Yes, this is not a fantastic error. It's going to get better soon.*
+_Aside: Yes, this is not a fantastic error. It's going to get better soon._
 
 The solution is usually to add an application of `unsafePartial` somewhere,
 like this:
@@ -172,7 +173,7 @@ Both implementations will behave in the same way.
 In this case, we know our `dot` implementation is fine, and so users of it
 should not have to worry about its partiality, so it makes sense to avoid
 propagating the constraint. Now, we will see another case where a `Partial`
-constraint *should* be propagated.
+constraint _should_ be propagated.
 
 Let us suppose we want a `foldr1` function, which works in a very similar way
 to `foldr` on Lists, except that it doesn't require an initial value to be
@@ -221,4 +222,4 @@ the type system do hold.
 
 ## API Documentation
 
-* API documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-partial).
+- API documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-partial).
