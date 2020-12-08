@@ -1,6 +1,6 @@
 # purescript-partial
 
-[![Latest release](http://img.shields.io/bower/v/purescript-partial.svg)](https://github.com/purescript/purescript-partial/releases)
+[![Latest release](http://img.shields.io/github/release/purescript/purescript-partial.svg)](https://github.com/purescript/purescript-partial/releases)
 [![Build status](https://github.com/purescript/purescript-partial/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-partial/actions?query=workflow%3ACI+branch%3Amaster)
 [![Pursuit](https://pursuit.purescript.org/packages/purescript-partial/badge)](https://pursuit.purescript.org/packages/purescript-partial)
 
