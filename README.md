@@ -39,7 +39,7 @@ accident.
 
 The Partial type class allows us to put this information back into the types,
 and thereby allows us to clearly demarcate which parts of your code are
-responsible for making that sure unsafe functions are used in a safe manner.
+responsible for making sure that unsafe functions are used in a safe manner.
 
 ## I just want to use a partial function, please
 
