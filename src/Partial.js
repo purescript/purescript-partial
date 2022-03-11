@@ -1,5 +1,3 @@
-"use strict";
-
 // module Partial
 
 export const _crashWith = function (msg) {

@@ -1,5 +1,3 @@
-"use strict";
-
 // module Partial.Unsafe
 
 export const _unsafePartial = function (f) {
