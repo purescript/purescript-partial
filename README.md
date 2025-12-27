@@ -203,7 +203,7 @@ minimumP = foldr1 min
 Again, the compiler infers the correct type:
 
 ```purescript
-minimumP :: forall a. (Partial, Ord a) => List a -> a
+minimumP :: forall a. Partial => Ord a => List a -> a
 ```
 
 Notice that the `Partial` constraint is automatically propagated to the
