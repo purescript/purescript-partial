@@ -17,6 +17,7 @@ Other improvements:
 ## [v4.0.0](https://github.com/purescript/purescript-partial/releases/tag/v4.0.0) - 2022-04-27
 
 Breaking changes:
+
 - Migrate FFI to ES modules (#24 by @kl0tl and @JordanMartinez)
 
 New features:
@@ -28,6 +29,7 @@ Other improvements:
 ## [v3.0.0](https://github.com/purescript/purescript-partial/releases/tag/v3.0.0) - 2021-02-26
 
 Breaking changes:
+
 - Added support for PureScript 0.14 and dropped support for all previous versions (#16)
 - Removed deprecated `unsafePartialBecause` (#16)
 
@@ -36,6 +38,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+
 - Added extra documentation to `unsafePartial` (#16)
 - Removed outer function in `_crashWith` FFI (#16)
 - Migrated CI to GitHub Actions and updated installation instructions to use Spago (#17)
