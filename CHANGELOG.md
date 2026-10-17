@@ -2,7 +2,7 @@
 
 Notable changes to this project are documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased](https://github.com/purescript/purescript-partial/compare/v4.0.1...HEAD)
 
 Breaking changes:
 
@@ -12,9 +12,23 @@ Bugfixes:
 
 Other improvements:
 
+## [v4.0.1](https://github.com/purescript/purescript-partial/releases/tag/v4.0.1) - 2026-10-17
+
+Breaking changes:
+
+New features:
+
+Bugfixes:
+
+Other improvements:
+
+- Migrate from Bower/Pulp to Spago and modernize CI, linting, and formatting tools (#27 by @thomashoneyman)
+- Fix incorrect constraint syntax in the README (#26 by @ursi)
+
 ## [v4.0.0](https://github.com/purescript/purescript-partial/releases/tag/v4.0.0) - 2022-04-27
 
 Breaking changes:
+
 - Migrate FFI to ES modules (#24 by @kl0tl and @JordanMartinez)
 
 New features:
@@ -26,6 +40,7 @@ Other improvements:
 ## [v3.0.0](https://github.com/purescript/purescript-partial/releases/tag/v3.0.0) - 2021-02-26
 
 Breaking changes:
+
 - Added support for PureScript 0.14 and dropped support for all previous versions (#16)
 - Removed deprecated `unsafePartialBecause` (#16)
 
@@ -34,6 +49,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+
 - Added extra documentation to `unsafePartial` (#16)
 - Removed outer function in `_crashWith` FFI (#16)
 - Migrated CI to GitHub Actions and updated installation instructions to use Spago (#17)
